@@ -1,0 +1,130 @@
+/* Base Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styling */
+#main-header {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#main-header img {
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+#main-header h1 {
+    margin: 10px 0;
+}
+
+/* Card Container Layout */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Collapsible Details Interactive Element */
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #2c3e50;
+}
+
+/* Form Controls */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Form Inputs & Select Dropdown */
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button Styling with Cursor Pointer */
+button[type="button"] {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #219150;
+}
+
+/* Part 1: Table Styling */
+.expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.expense-table th, 
+.expense-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.expense-table th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* Part 5: Advanced CSS Selectors Applied */
+
+/* Selector 1: Pseudo-class based on position (tr:nth-child(even)) */
+.expense-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Selector 2: Interactive Pseudo-class (:hover on table rows) */
+.expense-table tbody tr:hover {
+    background-color: #eaf2f8;
+}
+
+/* Selector 3: Focus state for inputs & select element */
+input:focus, 
+select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Selector 4: Direct Child Selector */
+#add-expense > h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+/* Selector 5: Descendant Selector */
+#expense-list td {
+    font-size: 14px;
+}
